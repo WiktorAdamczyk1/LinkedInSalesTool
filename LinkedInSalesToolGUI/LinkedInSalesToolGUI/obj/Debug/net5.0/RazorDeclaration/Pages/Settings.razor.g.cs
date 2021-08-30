@@ -135,7 +135,7 @@ using LinkedInLib;
     {
         if (firstRender)
         {
-            userStatusesStrings = await dbService.GetUserStatusesStrings();
+            if (Startup.databaseManagerSet) userStatusesStrings = await dbService.GetUserStatusesStrings();
             await ReadEverything();
             StateHasChanged();
             await CheckDatabaseInfo();

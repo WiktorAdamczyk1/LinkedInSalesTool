@@ -10,3 +10,15 @@ C:\Programming\Projects\LinkedInLib\LinkedInLib\obj\Debug\net5.0\LinkedInLib.csp
 C:\Programming\Projects\LinkedInLib\LinkedInLib\obj\Debug\net5.0\LinkedInLib.dll
 C:\Programming\Projects\LinkedInLib\LinkedInLib\obj\Debug\net5.0\ref\LinkedInLib.dll
 C:\Programming\Projects\LinkedInLib\LinkedInLib\obj\Debug\net5.0\LinkedInLib.pdb
+C:\Programowanie\Praca\Praktyki Hart Sp. z o.o\Projects\LinkedInLib\LinkedInLib\bin\Debug\net5.0\LinkedInLib.deps.json
+C:\Programowanie\Praca\Praktyki Hart Sp. z o.o\Projects\LinkedInLib\LinkedInLib\bin\Debug\net5.0\LinkedInLib.dll
+C:\Programowanie\Praca\Praktyki Hart Sp. z o.o\Projects\LinkedInLib\LinkedInLib\bin\Debug\net5.0\ref\LinkedInLib.dll
+C:\Programowanie\Praca\Praktyki Hart Sp. z o.o\Projects\LinkedInLib\LinkedInLib\bin\Debug\net5.0\LinkedInLib.pdb
+C:\Programowanie\Praca\Praktyki Hart Sp. z o.o\Projects\LinkedInLib\LinkedInLib\obj\Debug\net5.0\LinkedInLib.csproj.AssemblyReference.cache
+C:\Programowanie\Praca\Praktyki Hart Sp. z o.o\Projects\LinkedInLib\LinkedInLib\obj\Debug\net5.0\LinkedInLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programowanie\Praca\Praktyki Hart Sp. z o.o\Projects\LinkedInLib\LinkedInLib\obj\Debug\net5.0\LinkedInLib.AssemblyInfoInputs.cache
+C:\Programowanie\Praca\Praktyki Hart Sp. z o.o\Projects\LinkedInLib\LinkedInLib\obj\Debug\net5.0\LinkedInLib.AssemblyInfo.cs
+C:\Programowanie\Praca\Praktyki Hart Sp. z o.o\Projects\LinkedInLib\LinkedInLib\obj\Debug\net5.0\LinkedInLib.csproj.CoreCompileInputs.cache
+C:\Programowanie\Praca\Praktyki Hart Sp. z o.o\Projects\LinkedInLib\LinkedInLib\obj\Debug\net5.0\LinkedInLib.dll
+C:\Programowanie\Praca\Praktyki Hart Sp. z o.o\Projects\LinkedInLib\LinkedInLib\obj\Debug\net5.0\ref\LinkedInLib.dll
+C:\Programowanie\Praca\Praktyki Hart Sp. z o.o\Projects\LinkedInLib\LinkedInLib\obj\Debug\net5.0\LinkedInLib.pdb
