@@ -1,0 +1,385 @@
+﻿@page "/Messages"
+@using LinkedInLib
+@using LinkedInSalesToolGUI.Data
+@using Microsoft.AspNetCore.Components.Web
+@using log4net
+@using Microsoft.Extensions.Logging;
+@inject DatabaseService dbService
+@inject IJSRuntime JsRuntime
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+@if (Startup.databaseManagerSet)
+{
+
+    <style>
+        div .main {
+            padding: 0;
+            margin: 0;
+            background-color: rgb(75 42 144 / 15%);
+            background-size: 48px 48px;
+            background-image: radial-gradient( transparent 20px, #ffffff 20px, #ffffff 24px, transparent 24px ), radial-gradient( transparent 20px, #ffffff 20px, #ffffff 24px, transparent 24px );
+            background-position: 0 0, 24px 24px;
+        }
+    </style>
+
+    <div class="container" style="height:85vh; width: 100vw; border:dashed; padding-left:0px; padding-right:0px">
+        <div class="choice-area" style="border-right:dotted">
+            <div>
+                <p>Account</p>
+                @if (selectedAccount.Special)
+                {
+                    <p>Special account chosen</p>
+                }
+                <select @onchange="@AccountSelected" class="selectpicker" data-live-search="true">
+                    <option value="" selected disabled>Select Account</option>
+                    @for (int i = 0; i < accountsCreditentials.Count(); i++)
+                    {
+                        var account = i;
+                        if (CheckIfAccountNotify(accountsCreditentials[i].Id).Result)
+                        {
+                            <option style="background-color:yellow" value="@account">@accountsCreditentials[i].Email</option>
+                        }
+                        else
+                        {
+                            <option value="@account">@accountsCreditentials[i].Email</option>
+                        }
+
+                    }
+                </select>
+                <hr>
+                <p>System status</p>
+                <select class="selectpicker" data-live-search="true" @bind="selectedSystemStatus" title="Status">
+                    <option data-tokens="show all everything">Show all</option>
+                    @for (int i = 0; i < systemStatusesStrings.Count; i++)
+                    {
+                        <option>@systemStatusesStrings[i]</option>
+                    }
+                </select>
+                <hr>
+                <p>User status</p>
+                <select class="selectpicker" data-live-search="true" @bind="selectedUserStatus" title="Status">
+                    <option data-tokens="show all everything">Show all</option>
+                    @for (int i = 0; i < userStatusesStrings.Count; i++)
+                    {
+                        <option>@userStatusesStrings[i]</option>
+                    }
+                </select>
+            </div>
+            <div class="Clients" style="overflow-y:auto;">
+                <hr>
+                @if (anyAccountSelected)
+                {
+                    @for (int i = 0; i < clientDatas.Count; i++)
+                    {
+                        if ((GetSystemStatus(i) == selectedSystemStatus || selectedSystemStatus == "Show all")
+                            && (clientDatas[i].AssignedAccount == selectedAccount.Id || clientDatas[i].AssignedAccount == -1 || clientDatas[i].AssignedAccount == 0)
+                            && (GetUserStatus(i) == selectedUserStatus || selectedUserStatus == "Show all"))
+                        {
+                            var clientNumber = i;
+                            if (CheckIfClientNotify(clientDatas[i].Id).Result)
+                            {
+                                <div class="client" style="border-color:yellow; border-width:3px" @onclick="@(e => OnClientClick(clientNumber))">
+                                    @clientDatas[i].Name
+                                    <br>
+                                    System Status: @GetSystemStatus(i)
+                                    <br>
+                                    User Status: @GetUserStatus(i)
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="client" style="" @onclick="@(e => OnClientClick(clientNumber))">
+                                    @clientDatas[i].Name
+                                    <br>
+                                    System Status: @GetSystemStatus(i)
+                                    <br>
+                                    User Status: @GetUserStatus(i)
+                                </div>
+
+                            }
+
+                        }
+
+                    }
+                }
+            </div>
+        </div>
+        <div class="chat-area" style="overflow-y:scroll;" id="chatContainer">
+            <table>
+                @foreach (var messageDetails in messagesDetails)
+                {
+                    <tr>
+                        @if (messageDetails.Sent_by_client)
+                        {
+                            <text>
+                                <p style="font-size:large">
+                                    <div class="msg-container" style="background-color: springgreen">
+                                        <p>
+                                        <p class="client-name">@selectedClient.Name</p>
+                                        @messageDetails.Text
+                                </p>
+                                <span class="time-right"> @messageDetails.Time</span>
+                                <br>
+                                @if (messageDetails.Date == "01.01.0001")
+                                {
+                                    <span class="time-right"> Old message </span>
+                                }
+                                else
+                                {
+                                    <span class="time-right"> @messageDetails.Date</span>
+                                }
+                    </div>
+                    </p>
+                            </text>
+                        }
+                        else
+                        {
+                            <p style="font-size:large">
+                                <div class="msg-container" style="background-color:deepskyblue; float:right; width: 70%">
+                                    <p class="client-name">@selectedAccount.Name</p>
+                                    @messageDetails.Text
+                                    <br>
+
+                                    <span class="time-right"> @messageDetails.Time</span>
+                                    <br>
+                                    @if (messageDetails.Date == "01.01.0001")
+                                    {
+                                        <span class="time-right"> Old message </span>
+                                    }
+                                    else
+                                    {
+                                        <span class="time-right"> @messageDetails.Date</span>
+                                    }
+                                </div>
+                            </p>
+                        }
+
+                        </tr>
+                        <br>
+                    }
+                </table>
+            </div>
+            <div class="chat-top" style="border-bottom: dotted">
+                <div style="float:left">
+                    Client:
+                    @if (anyClientSelected)
+                    {
+                        @selectedClient.Name
+                        <br>
+                        <text>status: @SelectedUserStatus </text>
+                        <select @onchange="@UserStatusSelected" class="selectpicker" data-live-search="true">
+                            <option selected disabled>Change status</option>
+                            <option value="Add new status">Add new status</option>
+                            <option value="0">Unassigned</option> <!--on chosen unassign-->
+                            @for (int i = 1; i < userStatusesStrings.Count(); i++)
+                            {
+                                var statusId = i;
+                                <option value="@statusId">@userStatusesStrings[i]</option>
+                            }
+                        </select>
+
+                    }
+                    else
+                    {
+                        <text>not selected</text>
+                    }
+
+                </div>
+                <div style="float:right">
+                    Account:
+                    @if (anyAccountSelected)
+                    {
+                        @selectedAccount.Name
+                        <br>
+                        if (anyClientSelected)
+                        {
+                            <button disabled="@sendingMessage" @onclick="@(FixIncorrectData)" class="pure-button" style="align-self:flex-end; float:right; right: 5px; font-size: 80%">
+                                <i class="fas fa-sync"></i> resynchronise
+                            </button>
+                        }
+                    }
+                    else
+                    {
+                        <text>not selected</text>
+                    }
+                </div>
+
+            </div>
+            <div class="chat-new-message-area" style="border-top:dotted; display:table; position:relative; max-height:150px">
+                <textarea @bind="messageText" style="width:100%; resize:none; height:150px; padding:0px" placeholder="Message" maxlength="8000" />
+                <button disabled="@sendingMessage" @onclick="@(FixIncorrectData)" class="pure-button" style="position:absolute; bottom:15px; right:10px">
+                    <i class="far fa-comment-alt"></i> send
+                </button>
+            </div>
+            </div>
+}
+else
+{
+    <h1>Chat</h1>
+    <p style="color:red">Cannot load chat without database connection!</p>
+}
+@code {
+    private List<AccountCreditentials> accountsCreditentials;
+    private List<ClientData> clientDatas;
+    private List<MessageDetails> messagesDetails = new List<MessageDetails>();
+    private List<int> systemStatuses = new List<int>();
+    private List<int> userStatuses = new List<int>();
+    private List<string> systemStatusesStrings = new List<string>();
+    private List<string> userStatusesStrings = new List<string>();
+    private AccountCreditentials selectedAccount;
+    private ClientData selectedClient;
+    private string selectedSystemStatus = "Show all";
+    private string selectedUserStatus = "Show all";
+    private bool anyAccountSelected = false;
+    private bool anyClientSelected = false;
+    private bool sendingMessage = false;
+    private string messageText = null;
+    private string SelectedUserStatus { get; set; } = "Unassigned";
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (Startup.databaseManagerSet)
+        {
+            accountsCreditentials = await dbService.GetAccountsAsync();
+            clientDatas = await dbService.GetClientsAsync();
+            systemStatusesStrings = await dbService.GetSystemStatusesStrings();
+            userStatusesStrings = await dbService.GetUserStatusesStrings();
+
+        }
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+
+        if (Startup.databaseManagerSet) await JsRuntime.InvokeVoidAsync("ScrollToBottom", "chatContainer");
+
+    }
+
+    private async Task OnClientClick(int clientNumber)
+    {
+        if (!anyClientSelected)
+        {
+            anyClientSelected = true;
+        }
+
+        selectedClient = clientDatas[clientNumber];
+        await GetMessagesWithClient();
+        SelectedUserStatus = userStatusesStrings[userStatuses[clientNumber]];
+        await dbService.SetNotify(selectedAccount.Id, selectedClient.Id, false);
+        StateHasChanged();
+    }
+
+    private async Task AccountSelected(ChangeEventArgs e)
+    {
+        if (!anyAccountSelected)
+        {
+            anyAccountSelected = true;
+        }
+
+        selectedAccount = accountsCreditentials[Convert.ToInt32(e.Value.ToString())];
+        systemStatuses.Clear();
+        userStatuses.Clear();
+        foreach (var clientData in clientDatas)
+        {
+            int userStatus = await dbService.GetUserStatusId(selectedAccount.Id, clientData.Id);
+            int systemStatus = await dbService.GetSystemStatusId(selectedAccount.Id, clientData.Id);
+            systemStatuses.Add(systemStatus);
+            userStatuses.Add(userStatus);
+        }
+
+        StateHasChanged();
+    }
+
+    private string GetSystemStatus(int clientId)
+    {
+        return systemStatusesStrings[systemStatuses[clientId] - 1];
+    }
+
+    private string GetUserStatus(int clientId)
+    {
+        return userStatusesStrings[userStatuses[clientId]];
+    }
+
+    private async Task GetMessagesWithClient()
+    {
+        messagesDetails = await dbService.GetMessages(selectedAccount.Id, selectedClient.Id);
+    }
+
+    private async Task SendMessage(string message)
+    {
+        if (!string.IsNullOrEmpty(message) && anyAccountSelected && anyClientSelected && !sendingMessage)
+        {
+            sendingMessage = true;
+            await dbService.SendMessage(selectedAccount, selectedClient.Id, message);
+            sendingMessage = false;
+            messageText = null;
+            await GetMessagesWithClient();
+            StateHasChanged();
+        }
+        else if (sendingMessage)
+        {
+            await JsRuntime.InvokeAsync<bool>("alert", "Message is currently being sent, please wait."); // Confirm
+        }
+        else if (string.IsNullOrEmpty(message))
+        {
+            await JsRuntime.InvokeAsync<bool>("alert", "Cannot send an empty message!");
+        }
+        else
+        {
+            await JsRuntime.InvokeAsync<bool>("alert", "Please choose an account and a client!");
+        }
+    }
+
+    private async Task UserStatusSelected(ChangeEventArgs e)
+    {
+
+        if (e.Value.ToString() == "Add new status")
+        {
+            string prompt = await JsRuntime.InvokeAsync<string>("prompt", "Type new user status:"); // Prompt
+            if (await dbService.InsertUserStatus(prompt)) userStatusesStrings = await dbService.GetUserStatusesStrings();
+        }
+        else if (Convert.ToInt32(e.Value.ToString()) == 0)
+        {
+            //unassign
+            await dbService.UnassignUserStatus(selectedAccount.Id, selectedClient.Id);
+            SelectedUserStatus = userStatusesStrings[Convert.ToInt32(e.Value.ToString())];
+        }
+        else
+        {
+            await dbService.ChangeUserStatus(selectedAccount.Id, selectedClient.Id, await dbService.GetUserStatusId(userStatusesStrings[Convert.ToInt32(e.Value.ToString())]));
+            SelectedUserStatus = userStatusesStrings[Convert.ToInt32(e.Value.ToString())];
+        }
+    }
+
+    private int FindAccountInList(AccountCreditentials accountCreditentials)
+    {
+        for (int i = 0; i < accountsCreditentials.Count; i++)
+        {
+            if (accountsCreditentials[i].Id == accountCreditentials.Id) return i;
+        }
+
+        return -1;
+    }
+
+    private async Task FixIncorrectData()
+    {
+        //await dbService.FixIncorrectData(selectedClient, selectedAccount).ContinueWith(t => GetMessagesWithClient());
+        await dbService.FixIncorrectData(selectedClient, selectedAccount);
+        await GetMessagesWithClient();
+
+    }
+
+    private async Task<bool> CheckIfClientNotify(int id)
+    {
+        return await dbService.CheckIfClientNotify(id);
+    }
+
+    private async Task<bool> CheckIfAccountNotify(int id)
+    {
+        return await dbService.CheckIfAccountNotify(id);
+
+    }
+}

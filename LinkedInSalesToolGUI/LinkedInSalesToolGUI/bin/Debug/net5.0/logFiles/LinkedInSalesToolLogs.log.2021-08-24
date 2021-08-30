@@ -1,0 +1,372 @@
+INFO 14 LinkedInLib.LinkedInController - Logged in using: Kevin@trashmail.fr
+INFO 14 LinkedInLib.LinkedInController - Account email: Kevin@trashmail.fr Synchronising for client id: 26 
+INFO 14 LinkedInLib.LinkedInController - AccountId 5 was assigned to clientId 26
+INFO 14 LinkedInLib.LinkedInController - Client status before is: 1
+INFO 14 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/in/wiktoradamczyk/
+INFO 14 LinkedInLib.LinkedInController - You are currently friends with https://www.linkedin.com/in/wiktoradamczyk/
+INFO 14 LinkedInLib.LinkedInController -  count:0 15:22 Kevin Toster: test
+INFO 14 LinkedInLib.LinkedInController -  count:1 15:53 Kevin Toster: test message that is
+INFO 14 LinkedInLib.LinkedInController -  count:2 15:56 Kevin Toster: test message that is
+INFO 14 LinkedInLib.LinkedInController -  count:3 08:14 Kevin Toster: Wiktor Adamczyk
+INFO 14 LinkedInLib.LinkedInController -  count:4 14:26 Wiktor Adamczyk: a
+a
+a
+INFO 14 LinkedInLib.LinkedInController -  count:5 14:26 Wiktor Adamczyk: aa
+INFO 14 LinkedInLib.LinkedInController -  count:6 14:26 Wiktor Adamczyk: a
+INFO 14 LinkedInLib.LinkedInController -  count:7 14:26 Wiktor Adamczyk: a
+INFO 14 LinkedInLib.LinkedInController -  count:8 14:26 Wiktor Adamczyk: a
+INFO 14 LinkedInLib.LinkedInController -  count:9 13:28 Kevin Toster: Initial message
+INFO 14 LinkedInLib.LinkedInController -  count:10 13:51 Kevin Toster: Initial message
+INFO 14 LinkedInLib.LinkedInController -  count:11 13:56 Kevin Toster: as
+INFO 14 LinkedInLib.LinkedInController -  count:12 14:05 Wiktor Adamczyk: l
+INFO 14 LinkedInLib.LinkedInController -  count:13 14:05 Wiktor Adamczyk: l
+INFO 14 LinkedInLib.LinkedInController -  count:14 14:07 Kevin Toster: aaa
+INFO 14 LinkedInLib.LinkedInController -  count:15 14:11 Kevin Toster: pop
+INFO 14 LinkedInLib.LinkedInController -  count:16 14:48 Kevin Toster: testing
+INFO 14 LinkedInLib.LinkedInController -  count:17 14:51 Kevin Toster: crash
+INFO 14 LinkedInLib.LinkedInController -  count:18 14:56 Kevin Toster: cccc
+INFO 14 LinkedInLib.LinkedInController -  count:19 14:58 Kevin Toster: test
+INFO 14 LinkedInLib.LinkedInController -  count:20 15:14 Kevin Toster: new message
+INFO 14 LinkedInLib.LinkedInController -  count:21 15:14 Kevin Toster: a
+INFO 14 LinkedInLib.LinkedInController -  count:22 15:24 Kevin Toster: 123
+INFO 14 LinkedInLib.LinkedInController -  count:23 15:24 Kevin Toster: o
+INFO 14 LinkedInLib.LinkedInController -  count:24 11:34 Kevin Toster: testowa wiadomość
+INFO 14 LinkedInLib.LinkedInController -  count:25 10:18 Kevin Toster: Initial message
+INFO 14 LinkedInLib.LinkedInController -  count:26 10:18 Kevin Toster: Initial message
+INFO 14 LinkedInLib.LinkedInController -  count:27 10:18 Kevin Toster: Initial message
+INFO 14 LinkedInLib.LinkedInController -  count:28 10:26 Kevin Toster: scrolldown
+INFO 14 LinkedInLib.LinkedInController -  count:29 11:03 Kevin Toster: long messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong message
+INFO 14 LinkedInLib.LinkedInController -  count:30 11:32 Kevin Toster: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+INFO 14 LinkedInLib.LinkedInController - Message doesn't exist in db
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - New message inserted
+INFO 14 LinkedInLib.LinkedInController - Client status after is: 4
+INFO 14 LinkedInLib.LinkedInController - Account email: Kevin@trashmail.fr Synchronising for client id: 27 
+INFO 14 LinkedInLib.LinkedInController - AccountId 5 was assigned to clientId 27
+INFO 14 LinkedInLib.LinkedInController - Client status before is: 1
+INFO 14 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/in/koby-tester-8b6343219/
+INFO 14 LinkedInLib.LinkedInController - You are currently not friends with https://www.linkedin.com/in/koby-tester-8b6343219/
+INFO 14 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/mynetwork/invitation-manager/sent/
+INFO 14 LinkedInLib.LinkedInController - Client status after is: 2
+INFO 14 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/m/logout
+INFO 14 LinkedInLib.LinkedInController - Synchronisation finished
+INFO 22 LinkedInLib.LinkedInController - Chat set as read
+INFO 22 LinkedInLib.LinkedInController - Returning 31 messages
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 9 LinkedInLib.LinkedInController - First render of index page completed
+INFO 15 LinkedInLib.LinkedInController - Chat set as read
+INFO 15 LinkedInLib.LinkedInController - Returning 31 messages
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 10 LinkedInLib.LinkedInController - First render of index page completed
+INFO 9 LinkedInLib.LinkedInController - Chat set as read
+INFO 9 LinkedInLib.LinkedInController - Returning 31 messages
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 9 LinkedInLib.LinkedInController - First render of index page completed
+INFO 8 LinkedInLib.LinkedInController - Chat set as read
+INFO 8 LinkedInLib.LinkedInController - Returning 31 messages
+INFO 15 LinkedInLib.LinkedInController - Chat set as read
+INFO 15 LinkedInLib.LinkedInController - Returning 31 messages
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 10 LinkedInLib.LinkedInController - First render of index page completed
+INFO 8 LinkedInLib.LinkedInController - Chat set as read
+INFO 8 LinkedInLib.LinkedInController - Returning 31 messages
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 14 LinkedInLib.LinkedInController - First render of index page completed
+INFO 15 LinkedInLib.LinkedInController - Chat set as read
+INFO 15 LinkedInLib.LinkedInController - Returning 31 messages
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 8 LinkedInLib.LinkedInController - First render of index page completed
+INFO 8 LinkedInLib.LinkedInController - Chat set as read
+INFO 8 LinkedInLib.LinkedInController - Returning 31 messages
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 4 LinkedInLib.LinkedInController - First render of index page completed
+INFO 8 LinkedInLib.LinkedInController - Chat set as read
+INFO 8 LinkedInLib.LinkedInController - Returning 31 messages
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 8 LinkedInLib.LinkedInController - First render of index page completed
+INFO 4 LinkedInLib.LinkedInController - Chat set as read
+INFO 4 LinkedInLib.LinkedInController - Returning 31 messages
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 9 LinkedInLib.LinkedInController - First render of index page completed
+INFO 16 LinkedInLib.LinkedInController - Chat set as read
+INFO 16 LinkedInLib.LinkedInController - Returning 31 messages
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 10 LinkedInLib.LinkedInController - First render of index page completed
+INFO 14 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/
+INFO 14 LinkedInLib.LinkedInController - You're currently logged out
+INFO 14 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/
+INFO 14 LinkedInLib.LinkedInController - You're currently logged in
+INFO 14 LinkedInLib.LinkedInController - Logged in using: Kevin@trashmail.fr
+INFO 14 LinkedInLib.LinkedInController - You're currently logged in
+INFO 14 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/m/logout
+INFO 14 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/
+INFO 14 LinkedInLib.LinkedInController - You're currently logged in
+INFO 14 LinkedInLib.LinkedInController - Logged in using: Kevin@trashmail.fr
+INFO 14 LinkedInLib.LinkedInController - You're currently logged in
+INFO 14 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/m/logout
+INFO 14 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/
+INFO 14 LinkedInLib.LinkedInController - You're currently logged in
+INFO 14 LinkedInLib.LinkedInController - Logged in using: Kevin@trashmail.fr
+INFO 14 LinkedInLib.LinkedInController - You're currently logged in
+INFO 14 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/m/logout
+INFO 14 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/
+INFO 14 LinkedInLib.LinkedInController - You're currently logged in
+INFO 14 LinkedInLib.LinkedInController - Logged in using: Kevin@trashmail.fr
+INFO 14 LinkedInLib.LinkedInController - You're currently logged in
+INFO 14 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/m/logout
+WARN 14 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer - Unhandled exception rendering component: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="session_key"]"}
+  (Session info: headless chrome=92.0.4515.159)
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="session_key"]"}
+  (Session info: headless chrome=92.0.4515.159)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at LinkedInLib.AccountManager.LogIntoLinkedIn(AccountCreditentials account) in C:\Programming\Projects\LinkedInLib\LinkedInLib\AccountManager.cs:line 40
+   at LinkedInSalesToolGUI.Data.DatabaseService.TestAccountLogIn(String email, String password) in C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI\Data\DatabaseService.cs:line 168
+   at LinkedInSalesToolGUI.Pages.Accounts.TestLogIn(String email, String password) in C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI\Pages\Accounts.razor:line 162
+   at Microsoft.AspNetCore.Components.ComponentBase.CallStateHasChangedOnAsyncCompletion(Task task)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle)
+ERROR 14 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost - Unhandled exception in circuit 'BzTKmlTtBrSM7cxpF8MVNdYwvWEq_MN0aUWKzVE8pQ0'.
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="session_key"]"}
+  (Session info: headless chrome=92.0.4515.159)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at LinkedInLib.AccountManager.LogIntoLinkedIn(AccountCreditentials account) in C:\Programming\Projects\LinkedInLib\LinkedInLib\AccountManager.cs:line 40
+   at LinkedInSalesToolGUI.Data.DatabaseService.TestAccountLogIn(String email, String password) in C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI\Data\DatabaseService.cs:line 168
+   at LinkedInSalesToolGUI.Pages.Accounts.TestLogIn(String email, String password) in C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI\Pages\Accounts.razor:line 162
+   at Microsoft.AspNetCore.Components.ComponentBase.CallStateHasChangedOnAsyncCompletion(Task task)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle)
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 4 LinkedInLib.LinkedInController - First render of index page completed
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 12 LinkedInLib.LinkedInController - First render of index page completed
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 8 LinkedInLib.LinkedInController - First render of index page completed
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 4 LinkedInLib.LinkedInController - First render of index page completed
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 9 LinkedInLib.LinkedInController - First render of index page completed
+INFO 5 LinkedInLib.LinkedInController - First render of index page completed
+WARN 5 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer - Unhandled exception rendering component: '0' is not a valid value for 'Interval'. 'Interval' must be greater than 0.
+System.ArgumentException: '0' is not a valid value for 'Interval'. 'Interval' must be greater than 0.
+   at System.Timers.Timer.set_Interval(Double value)
+   at LinkedInSalesToolGUI.Pages.Index.SyncLoop() in C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI\Pages\Index.razor:line 183
+   at Microsoft.AspNetCore.Components.EventCallbackWorkItem.InvokeAsync[T](MulticastDelegate delegate, T arg)
+   at Microsoft.AspNetCore.Components.ComponentBase.Microsoft.AspNetCore.Components.IHandleEvent.HandleEventAsync(EventCallbackWorkItem callback, Object arg)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.DispatchEventAsync(UInt64 eventHandlerId, EventFieldInfo fieldInfo, EventArgs eventArgs)
+ERROR 5 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost - Unhandled exception in circuit 'zDWq7WekOrqP88a57Jt33DDQVWQso14OczRJdPb359o'.
+System.ArgumentException: '0' is not a valid value for 'Interval'. 'Interval' must be greater than 0.
+   at System.Timers.Timer.set_Interval(Double value)
+   at LinkedInSalesToolGUI.Pages.Index.SyncLoop() in C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI\Pages\Index.razor:line 183
+   at Microsoft.AspNetCore.Components.EventCallbackWorkItem.InvokeAsync[T](MulticastDelegate delegate, T arg)
+   at Microsoft.AspNetCore.Components.ComponentBase.Microsoft.AspNetCore.Components.IHandleEvent.HandleEventAsync(EventCallbackWorkItem callback, Object arg)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.DispatchEventAsync(UInt64 eventHandlerId, EventFieldInfo fieldInfo, EventArgs eventArgs)
+INFO 9 LinkedInLib.LinkedInController - First render of index page completed
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 13 LinkedInLib.LinkedInController - First render of index page completed
+WARN 4 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer - Unhandled exception rendering component: Input string was not in a correct format.
+System.FormatException: Input string was not in a correct format.
+   at System.Globalization.TimeSpanFormat.FormatCustomized(TimeSpan value, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, StringBuilder result)
+   at System.Globalization.TimeSpanFormat.Format(TimeSpan value, String format, IFormatProvider formatProvider)
+   at System.TimeSpan.ToString(String format)
+   at LinkedInSalesToolGUI.Pages.Index.SyncLoop() in C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI\Pages\Index.razor:line 187
+   at Microsoft.AspNetCore.Components.EventCallbackWorkItem.InvokeAsync[T](MulticastDelegate delegate, T arg)
+   at Microsoft.AspNetCore.Components.ComponentBase.Microsoft.AspNetCore.Components.IHandleEvent.HandleEventAsync(EventCallbackWorkItem callback, Object arg)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.DispatchEventAsync(UInt64 eventHandlerId, EventFieldInfo fieldInfo, EventArgs eventArgs)
+ERROR 4 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost - Unhandled exception in circuit 'TD7IivTFEhHDgNwb1U3UipZEBLU8pag9_NDKl_HqMZ4'.
+System.FormatException: Input string was not in a correct format.
+   at System.Globalization.TimeSpanFormat.FormatCustomized(TimeSpan value, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, StringBuilder result)
+   at System.Globalization.TimeSpanFormat.Format(TimeSpan value, String format, IFormatProvider formatProvider)
+   at System.TimeSpan.ToString(String format)
+   at LinkedInSalesToolGUI.Pages.Index.SyncLoop() in C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI\Pages\Index.razor:line 187
+   at Microsoft.AspNetCore.Components.EventCallbackWorkItem.InvokeAsync[T](MulticastDelegate delegate, T arg)
+   at Microsoft.AspNetCore.Components.ComponentBase.Microsoft.AspNetCore.Components.IHandleEvent.HandleEventAsync(EventCallbackWorkItem callback, Object arg)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.DispatchEventAsync(UInt64 eventHandlerId, EventFieldInfo fieldInfo, EventArgs eventArgs)
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 8 LinkedInLib.LinkedInController - First render of index page completed
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 10 LinkedInLib.LinkedInController - First render of index page completed
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 4 LinkedInLib.LinkedInController - First render of index page completed
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 4 LinkedInLib.LinkedInController - First render of index page completed
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 10 LinkedInLib.LinkedInController - First render of index page completed
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 10 LinkedInLib.LinkedInController - First render of index page completed
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 4 LinkedInLib.LinkedInController - First render of index page completed
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 12 LinkedInLib.LinkedInController - First render of index page completed
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 5 LinkedInLib.LinkedInController - First render of index page completed
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 4 LinkedInLib.LinkedInController - First render of index page completed
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 8 LinkedInLib.LinkedInController - First render of index page completed
+INFO 4 LinkedInLib.LinkedInController - Chat set as read
+INFO 4 LinkedInLib.LinkedInController - Returning 31 messages
+INFO 13 LinkedInLib.LinkedInController - Chat set as read
+INFO 13 LinkedInLib.LinkedInController - Returning 31 messages
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...

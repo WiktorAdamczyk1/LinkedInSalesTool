@@ -1,0 +1,214 @@
+﻿@page "/Accounts"
+@using Microsoft.Extensions.Logging
+@using LinkedInSalesToolGUI.Data
+@using LinkedInLib
+@inject DatabaseService dbService
+@inject IJSRuntime JsRuntime
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<h1>Accounts</h1>
+@if (Startup.databaseManagerSet)
+{
+
+    @if (!alertClosed)
+    {
+        if (testSucceded)
+        {
+            <div class="alert" style="background-color:limegreen">
+                <span class="closebtn" @onclick="@(()=>alertClosed = true)">&times;</span>
+                Login test successful!
+            </div>
+        }
+        else
+        {
+            <div class="alert">
+                <span class="closebtn" @onclick="@(()=>alertClosed = true)">&times;</span>
+                Login test has failed!
+            </div>
+        }
+    }
+    <p>Amount of accounts in the database: @accountsCreditentials.Count</p>
+
+    @if (checkingName)
+    {
+        <p>Checking your name</p>
+    }
+    else
+    {
+
+        <EditForm Model="@accountModel" OnValidSubmit="@HandleValidSubmit">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+            <form class="pure-form">
+                <fieldset class="pure-group">
+                    <InputText id="email" placeholder="Email" @bind-Value="accountModel.Email" />
+                    <InputText id="password" type="password" placeholder="Password" @bind-Value="accountModel.Password" />
+                </fieldset>
+            </form>
+            <label for="checkbox-one" class="pure-checkbox">
+                <input type="checkbox" id="checkbox-one" class="pure-checkbox" @bind="accountModel.Special"> Special account
+            </label><br>
+            <button class="btn btn-primary" type="submit">Add new account</button>
+
+        </EditForm>
+    }
+
+    @if (accountsCreditentials == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Delete</th>
+                    <th class="sort-th" @onclick="@(() => SortTable("Id"))">
+                        Id<span class="fas @(SetSortIcon("Id"))"></span>
+                    </th>
+                    <th class="sort-th" @onclick="@(() => SortTable("Name"))">
+                        Name<span class="fas @(SetSortIcon("Name"))"></span>
+                    </th>
+                    <th class="sort-th" @onclick="@(() => SortTable("Email"))">
+                        Email<span class="fas @(SetSortIcon("Email"))"></span>
+                    </th>
+                    <th>Password</th>
+                    <th class="sort-th" @onclick="@(() => SortTable("Special"))">
+                        Special<span class="fas @(SetSortIcon("Special"))"></span>
+                    </th>
+                    <th>Test</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < accountsCreditentials.Count(); i++)
+                {
+                    var buttonNumber = i;
+                    <tr>
+                        <td><button class="btn btn-danger" @onclick="@(e => RemoveAccount(accountsCreditentials[buttonNumber].Id))">X</button></td>
+                        <td>@accountsCreditentials[i].Id</td>
+                        <td>@accountsCreditentials[i].Name</td>
+                        <td>@accountsCreditentials[i].Email</td>
+                        <td>Hidden</td>
+                        <td>@accountsCreditentials[i].Special</td>
+                        <td><button class="btn btn-primary" @onclick="@(e => TestLogIn(accountsCreditentials[buttonNumber].Email, accountsCreditentials[buttonNumber].Password))">X</button></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+}
+else
+{
+    <p style="color:red">Cannot manage accounts without database connection!</p>
+}
+
+
+@code {
+    private List<AccountCreditentials> accountsCreditentials;
+    private AccountModel accountModel = new();
+    private bool checkingName = false;
+    private bool alertClosed = true;
+    private bool testSucceded = false;
+    private bool? isSortedAscending = null;
+    public string ActiveSortColumn { get; set; } = null;
+
+    private async Task HandleValidSubmit()
+    {
+
+        if (!(await dbService.CheckIfAccountExistsInDb(accountModel.Email)))
+        {
+            checkingName = true;
+            string name = await dbService.GetAccountName(accountModel.Email, accountModel.Password);
+            if (name != "Failed") if (await dbService.InsertAccount(accountModel.Email, accountModel.Password, name, accountModel.Special))
+                {
+                    accountsCreditentials = await dbService.GetAccountsAsync();
+                    testSucceded = true;
+                }
+                else
+                {
+                    testSucceded = false;
+                }
+            //else error prompt about failure
+            alertClosed = false;
+            checkingName = false;
+        }
+        else
+        {
+            await JsRuntime.InvokeAsync<bool>("alert", "Account with that email is already in the database");
+        }
+
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (Startup.databaseManagerSet)
+        {
+            accountsCreditentials = await dbService.GetAccountsAsync();
+        }
+
+    }
+
+    private async Task RemoveAccount(int accountId)
+    {
+        bool confirmed = await JsRuntime.InvokeAsync<bool>("confirm", "Are you sure you want to remove one of your accounts?"); // Confirm
+        if (confirmed && await dbService.RemoveAccountAsync(accountId)) accountsCreditentials = await dbService.GetAccountsAsync();
+
+    }
+
+    private async Task TestLogIn(string email, string password)
+    {
+        testSucceded = await dbService.TestAccountLogIn(email, password);
+        alertClosed = false;
+    }
+
+    private void SortTable(string columnName, bool changingSort = true)
+    {
+        if (columnName != ActiveSortColumn)
+        {
+            accountsCreditentials = accountsCreditentials.OrderBy(x => x.GetType().GetProperty(columnName).GetValue(x, null)).ToList();
+            isSortedAscending = true;
+            ActiveSortColumn = columnName;
+        }
+        else if (changingSort)
+        {
+            if (isSortedAscending == true)
+            {
+                accountsCreditentials = accountsCreditentials.OrderByDescending(x => x.GetType().GetProperty(columnName).GetValue(x, null)).ToList();
+            }
+            else
+            {
+                accountsCreditentials = accountsCreditentials.OrderBy(x => x.GetType().GetProperty(columnName).GetValue(x, null)).ToList();
+            }
+            isSortedAscending = !isSortedAscending;
+        }
+        else
+        {
+            if (isSortedAscending == false)
+            {
+                accountsCreditentials = accountsCreditentials.OrderByDescending(x => x.GetType().GetProperty(columnName).GetValue(x, null)).ToList();
+            }
+            else
+            {
+                accountsCreditentials = accountsCreditentials.OrderBy(x => x.GetType().GetProperty(columnName).GetValue(x, null)).ToList();
+            }
+        }
+    }
+
+    private string SetSortIcon(string columnName)
+    {
+        if (ActiveSortColumn != columnName)
+        {
+            return string.Empty;
+        }
+        if (isSortedAscending == true)
+        {
+            return "fa-sort-up";
+        }
+        else
+        {
+            return "fa-sort-down";
+        }
+    }
+
+}

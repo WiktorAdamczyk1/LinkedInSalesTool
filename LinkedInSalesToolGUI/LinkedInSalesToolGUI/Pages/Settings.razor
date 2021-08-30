@@ -1,0 +1,259 @@
+﻿@page "/settings"
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+@using LinkedInSalesToolGUI.Data
+@using LinkedInLib
+@inject DatabaseService dbService
+@inject ProtectedLocalStorage BrowserStorage
+@inject IJSRuntime JsRuntime
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<h1>Settings</h1>
+
+@for (int i = 0; i < messageVariableNames.Count; i++)
+{
+    var buttonNumber = i;
+    <p>@messageVariableNames[buttonNumber]</p>
+    <textarea style="max-width:600px; min-height:280px; resize:none" class="form-control" @bind="currentInputValues[buttonNumber]" />
+    <br>
+    //<button class="btn btn-secondary" @onclick="@(() => SaveMessage(buttonNumber))">Save</button>
+    //<button class="btn btn-secondary" @onclick="@(() => ReadMessage(buttonNumber))">Remove changes</button>
+    <hr>
+}
+
+@for (int i = 0; i < timeVariableNames.Count; i++)
+{
+    var buttonNumber = i;
+    <p>@timeVariableNames[buttonNumber]</p>
+    <input type="time" class="e-control e-timepicker e-lib e-input" @bind="dateTimes[buttonNumber]" />
+    <br>
+    //<button class="btn btn-secondary" @onclick="@(() => SaveTime(buttonNumber))">Save</button>
+    //<button class="btn btn-secondary" @onclick="@(() => ReadTime(buttonNumber))">Remove changes</button>
+    <hr>
+}
+
+@for (int i = 0; i < daysVariableNames.Count; i++)
+{
+    var buttonNumber = i;
+    <p>@daysVariableNames[buttonNumber]</p>
+    <text>
+        Days:
+    </text>
+    <input type="number" min="0" oninput="validity.valid||(value='');" class="e-control e-timepicker e-lib e-input" @bind="timeSpans[buttonNumber]" />
+    <br>
+    //<html>Hours and minutes:</html> <input type="time" class="e-control e-timepicker e-lib e-input" @bind="dateTimes[buttonNumber]" />
+    //<br>
+    //<button class="btn btn-secondary" @onclick="@(() => SaveTime(buttonNumber))">Save</button>
+    //<button class="btn btn-secondary" @onclick="@(() => ReadTime(buttonNumber))">Remove changes</button>
+    <hr>
+}
+
+<text> Delete user status: </text>
+<br>
+<select @onchange="@UserStatusSelected" class="selectpicker" data-live-search="true">
+    <option selected disabled>Remove status</option>
+    @for (int i = 1; i < userStatusesStrings.Count(); i++)
+    {
+        var statusId = i;
+        <option value="@statusId">@userStatusesStrings[i]</option>
+    }
+</select>
+
+<hr>
+<p>Database connection</p>
+<form class="pure-form">
+    <fieldset class="pure-group">
+        <input type="text" id="server" placeholder="Server" @bind="databaseConnection[0]" />
+        <input type="text" id="database" placeholder="Database" @bind="databaseConnection[1]" />
+        <input type="text" id="port" placeholder="Port" @bind="databaseConnection[2]" />
+        <input type="text" id="username" placeholder="Username" @bind="databaseConnection[3]" />
+        <input id="password" type="password" placeholder="Password" @bind="databaseConnection[4]" />
+    </fieldset>
+</form>
+
+@if (checkingDatabaseConnection)
+{
+    <p><em>Loading...</em></p>
+}
+else if (databaseConnectionValid)
+{
+    <p style="color:limegreen"><em>Valid connection established</em></p>
+}
+else
+{
+    <p style="color:red"><em>Couldn't establish a connection</em></p>
+}
+<button class="btn btn-secondary" @onclick="@(CheckDatabaseInfo)">Check database connection</button>
+<hr>
+<button class="btn btn-secondary" @onclick="@(SaveEverything)">Save changes</button>
+<button class="btn btn-secondary" @onclick="@(ReadEverything)">Cancel new changes</button>
+<br>
+
+@code {
+    string[] currentInputValues = new string[4];
+    DateTime[] dateTimes = new DateTime[2];
+    int[] timeSpans = new int[3];
+    string[] databaseConnection = new string[5];
+    readonly List<string> messageVariableNames = new List<string>() { "Initial Message", "Followup Message", "Special Account Initial Message", "Special Account Followup Message" };
+    readonly List<string> timeVariableNames = new List<string>() { "Tool start time", "Tool stop time" };
+    readonly List<string> daysVariableNames = new List<string>() { "Time before Initial message", "Time before Followup message", "Time after Followup message" };
+    readonly List<string> databaseVariableNames = new List<string>() { "server", "database", "port", "username", "password" };
+    List<string> userStatusesStrings = new List<string>();
+    public bool checkingDatabaseConnection = false;
+    public static bool databaseConnectionValid = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Index index = new Index();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            userStatusesStrings = await dbService.GetUserStatusesStrings();
+            await ReadEverything();
+            StateHasChanged();
+            await CheckDatabaseInfo();
+
+        }
+
+    }
+
+    private async Task SaveDatabaseInfo(int id)
+    {
+        await BrowserStorage.SetAsync(databaseVariableNames[id], databaseConnection[id]);
+    }
+
+    private async Task SaveTimeWithDays(int id)
+    {
+        await BrowserStorage.SetAsync(daysVariableNames[id], timeSpans[id]);
+    }
+
+    private async Task SaveMessage(int id)
+    {
+        await BrowserStorage.SetAsync(messageVariableNames[id], currentInputValues[id]);
+    }
+
+    private async Task SaveTime(int id)
+    {
+        await BrowserStorage.SetAsync(timeVariableNames[id], dateTimes[id]);
+    }
+
+    private async Task ReadTimeWithDays(int id)
+    {
+
+        //var resultTime = await BrowserStorage.GetAsync<DateTime>(timeVariableNames[id]);
+        //dateTimes[id] = result.Success ? result.Value : new DateTime(2);
+        var result = await BrowserStorage.GetAsync<int>(daysVariableNames[id]);
+        timeSpans[id] = result.Success ? result.Value : 0;
+
+    }
+
+    private async Task ReadMessage(int id)
+    {
+        var result = await BrowserStorage.GetAsync<string>(messageVariableNames[id]);
+        currentInputValues[id] = result.Success ? result.Value : "";
+    }
+
+    private async Task ReadTime(int id)
+    {
+        var result = await BrowserStorage.GetAsync<DateTime>(timeVariableNames[id]);
+        dateTimes[id] = result.Success ? result.Value : new DateTime(2);
+    }
+
+    private async Task ReadDatabase(int id)
+    {
+        var result = await BrowserStorage.GetAsync<string>(databaseVariableNames[id]);
+        databaseConnection[id] = result.Success ? result.Value : "";
+    }
+
+    private async Task SaveEverything()
+    {
+        int j = 0;
+        foreach (var value in currentInputValues)
+        {
+            await SaveMessage(j);
+            j++;
+        }
+        j = 0;
+        foreach (var value in dateTimes)
+        {
+            await SaveTime(j);
+            j++;
+        }
+        j = 0;
+        foreach (var value in timeSpans)
+        {
+            await SaveTimeWithDays(j);
+            j++;
+        }
+        j = 0;
+        foreach (var value in databaseVariableNames)
+        {
+            await SaveDatabaseInfo(j);
+            j++;
+        }
+    }
+
+    private async Task ReadEverything()
+    {
+        int j = 0;
+        foreach (var value in currentInputValues)
+        {
+            await ReadMessage(j);
+            j++;
+        }
+        j = 0;
+        foreach (var value in dateTimes)
+        {
+            await ReadTime(j);
+            j++;
+        }
+        j = 0;
+        foreach (var value in timeSpans)
+        {
+            await ReadTimeWithDays(j);
+            j++;
+        }
+        j = 0;
+        foreach (var value in databaseVariableNames)
+        {
+            await ReadDatabase(j);
+            j++;
+        }
+    }
+
+    private async Task DeleteMessage(int id)
+    {
+        await BrowserStorage.DeleteAsync(messageVariableNames[id]);
+    }
+
+    private async Task CheckDatabaseInfo()
+    {
+        checkingDatabaseConnection = true;
+        StateHasChanged();
+        if (await dbService.CheckDatabaseConnection(databaseConnection[0], databaseConnection[1], databaseConnection[2], databaseConnection[3], databaseConnection[4]))
+        {
+            databaseConnectionValid = true;
+            Startup.databaseManagerSet = true;
+            Startup.databaseManager = new DatabaseManager(databaseConnection[0], databaseConnection[1], databaseConnection[2], databaseConnection[3], databaseConnection[4]);
+
+        }
+        else
+        {
+            databaseConnectionValid = false;
+            Startup.databaseManagerSet = false;
+        }
+        checkingDatabaseConnection = false;
+        StateHasChanged();
+    }
+
+    private async Task UserStatusSelected(ChangeEventArgs e)
+    {
+        bool confirmed = await JsRuntime.InvokeAsync<bool>("confirm", $"Are you sure you want to remove {e.Value.ToString()} from user statuses?"); // Confirm
+        if (confirmed && await dbService.RemoveUserStatus(userStatusesStrings[Convert.ToInt32(e.Value.ToString())])) userStatusesStrings = await dbService.GetUserStatusesStrings();
+        StateHasChanged();
+    }
+
+}

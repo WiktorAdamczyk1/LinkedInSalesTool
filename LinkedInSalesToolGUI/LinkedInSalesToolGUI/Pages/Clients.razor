@@ -1,0 +1,215 @@
+﻿@page "/Clients"
+
+@using LinkedInSalesToolGUI.Data
+@using LinkedInLib
+@using System
+@using System.IO
+@using Microsoft.AspNetCore.Hosting
+@using Microsoft.Extensions.Logging
+@using System.Text.RegularExpressions
+@inject DatabaseService dbService
+@inject IJSRuntime JsRuntime
+
+<h1>Clients</h1>
+@if (Startup.databaseManagerSet)
+{
+    <p>Amount of clients in the database: @clientDatas.Count</p>
+    @if (isInsertingClients)
+    {
+        <p>Please wait, visiting clients profiles to get their names. This takes around 5 seconds for 1 client.</p>
+    }
+    else
+    {
+
+
+        @if (accountsCount > 0)
+        {
+            <p>
+                <label>
+                    Upload a CSV file with LinkedIn Profile Addresses (only new clients will be added):<br>
+                    <InputFile class="btn btn-primary" OnChange="@OnInputFileChange" multiple />
+                </label>
+            </p>
+            <label>
+                Get name for every new client (Required, will take some time)
+                <input disabled type="checkbox" @bind="checkedValue">
+            </label>
+        }
+        else
+        {
+            <text> Please add at least 1 account before adding clients! </text>
+        }
+
+    }
+
+    @if (clientDatas.Count == 0)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Delete</th>
+                    <th class="sort-th" @onclick="@(() => SortTable("Id"))">
+                        Id<span class="fa @(SetSortIcon("Id"))"></span>
+                    </th>
+                    <th class="sort-th" @onclick="@(() => SortTable("Name"))">
+                        Name<span class="fa @(SetSortIcon("Name"))"></span>
+                    </th>
+                    <th class="sort-th" @onclick="@(() => SortTable("ProfileAddress"))">
+                        Profile address<span class="fa @(SetSortIcon("ProfileAddress"))"></span>
+                    </th>
+                    <th class="sort-th" @onclick="@(() => SortTable("AssignedAccount"))">
+                        Assigned account<span class="fa @(SetSortIcon("AssignedAccount"))"></span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < clientDatas.Count; i++)
+                {
+                    var buttonNumber = i;
+                <tr>
+                    <td><button class="btn btn-danger" @onclick="@(e => RemoveClient(clientDatas[buttonNumber].Id))">X</button></td>
+                    <td>@clientDatas[i].Id</td>
+                    <td>@clientDatas[i].Name</td>
+                    <td>@clientDatas[i].ProfileAddress</td>
+                    <td>@clientDatas[i].AssignedAccount</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    }
+}
+else
+{
+    <p style="color:red">Cannot manage clients without database connection!</p>
+}
+@code {
+
+    private List<ClientData> clientDatas;
+    private int accountsCount = 0;
+    private List<IBrowserFile> loadedFiles = new();
+    private bool isInsertingClients = false;
+    private bool checkedValue = true;
+    private bool? isSortedAscending = null;
+    private string activeSortColumn = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (Startup.databaseManagerSet)
+        {
+            clientDatas = await dbService.GetClientsAsync();
+            if (isSortedAscending != null && activeSortColumn != null) SortTable(activeSortColumn, false);
+            accountsCount = (await dbService.GetAccountsAsync()).Count;
+        }
+    }
+
+    public async Task OnInputFileChange(InputFileChangeEventArgs e)
+    {
+        var singleFile = e.File;
+
+        Regex regex = new Regex(".+\\.csv", RegexOptions.Compiled);
+        if (!regex.IsMatch(singleFile.Name))
+        {
+            await JsRuntime.InvokeAsync<bool>("alert", "File format is invalid! Make sure your file is .csv"); // Confirm
+        }
+        else
+        {
+            isInsertingClients = true;
+            var stream = singleFile.OpenReadStream();
+            var csv = new List<string>();
+            MemoryStream ms = new MemoryStream();
+            await stream.CopyToAsync(ms);
+            stream.Close();
+            var outputFileString = System.Text.Encoding.UTF8.GetString(ms.ToArray());
+
+            foreach (var item in outputFileString.Split(Environment.NewLine))
+            {
+                string str = SplitCSV(item.ToString());
+                if (!string.IsNullOrEmpty(str)) csv.Add(str);
+            }
+
+            if (await dbService.ImportClientsFromCSVAsync(csv, checkedValue)) clientDatas = await dbService.GetClientsAsync();
+            if (isSortedAscending != null && activeSortColumn != null) SortTable(activeSortColumn, false);
+            isInsertingClients = false;
+        }
+    }
+
+    private string SplitCSV(string input)
+    {
+        //Excludes commas within quotes
+        Regex csvSplit = new Regex("(?:^|,)(\"(?:[^\"]+|\"\")*\"|[^,]*)", RegexOptions.Compiled);
+        string curr = null;
+        foreach (Match match in csvSplit.Matches(input))
+        {
+            curr = match.Value;
+
+            curr = curr.TrimStart(',');
+            curr = Regex.Replace(curr, @"^\s*$[\r\n]*", string.Empty);
+        }
+
+        return curr;
+    }
+
+    private async Task RemoveClient(int clientId)
+    {
+        bool confirmed = await JsRuntime.InvokeAsync<bool>("confirm", "Are you sure you want to remove one of your clients?"); // Confirm
+        if (confirmed)
+        {
+            if (await dbService.RemoveClientAsync(clientId)) clientDatas = await dbService.GetClientsAsync();
+            if (isSortedAscending != null && activeSortColumn != null) SortTable(activeSortColumn, false);
+        }
+    }
+
+    private void SortTable(string columnName, bool changingSort = true)
+    {
+        if (columnName != activeSortColumn)
+        {
+            clientDatas = clientDatas.OrderBy(x => x.GetType().GetProperty(columnName).GetValue(x, null)).ToList();
+            isSortedAscending = true;
+            activeSortColumn = columnName;
+        }
+        else if (changingSort)
+        {
+            if (isSortedAscending == true)
+            {
+                clientDatas = clientDatas.OrderByDescending(x => x.GetType().GetProperty(columnName).GetValue(x, null)).ToList();
+            }
+            else
+            {
+                clientDatas = clientDatas.OrderBy(x => x.GetType().GetProperty(columnName).GetValue(x, null)).ToList();
+            }
+            isSortedAscending = !isSortedAscending;
+        }
+        else
+        {
+            if (isSortedAscending == false)
+            {
+                clientDatas = clientDatas.OrderByDescending(x => x.GetType().GetProperty(columnName).GetValue(x, null)).ToList();
+            }
+            else
+            {
+                clientDatas = clientDatas.OrderBy(x => x.GetType().GetProperty(columnName).GetValue(x, null)).ToList();
+            }
+        }
+    }
+
+    private string SetSortIcon(string columnName)
+    {
+        if (activeSortColumn != columnName)
+        {
+            return string.Empty;
+        }
+        if (isSortedAscending == true)
+        {
+            return "fa-sort-up";
+        }
+        else
+        {
+            return "fa-sort-down";
+        }
+    }
+
+}

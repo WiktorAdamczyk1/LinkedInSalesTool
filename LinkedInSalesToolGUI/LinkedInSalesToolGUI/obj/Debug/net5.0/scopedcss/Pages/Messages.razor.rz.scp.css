@@ -1,0 +1,218 @@
+.container[b-3bf0iy54mu] {
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+  grid-template-rows: 0.1fr 2.8fr 0.6fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: stretch;
+  background-color: white;
+  grid-template-areas:
+    "choice-area chat-top"
+    "choice-area chat-area"
+    "choice-area chat-new-message-area";
+}
+
+.choice-area[b-3bf0iy54mu] {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 1.6fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "."
+    "Clients";
+  grid-area: choice-area;
+}
+
+.message[b-3bf0iy54mu] {
+	max-width:70%;
+	border: 1px solid;
+}
+			
+.Clients[b-3bf0iy54mu] { grid-area: Clients; }
+
+.chat-area[b-3bf0iy54mu] { grid-area: chat-area; }
+
+.chat-top[b-3bf0iy54mu] { grid-area: chat-top; }
+
+.chat-new-message-area[b-3bf0iy54mu] { grid-area: chat-new-message-area; }
+
+.loader[b-3bf0iy54mu] {
+  font-size: 10px;
+  margin: 0px;
+  text-indent: -9999em;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  background: #009dff;
+  background: -moz-linear-gradient(left, #009dff 10%, rgba(0,157,255, 0) 42%);
+  background: -webkit-linear-gradient(left, #009dff 10%, rgba(0,157,255, 0) 42%);
+  background: -o-linear-gradient(left, #009dff 10%, rgba(0,157,255, 0) 42%);
+  background: -ms-linear-gradient(left, #009dff 10%, rgba(0,157,255, 0) 42%);
+  background: linear-gradient(to right, #009dff 10%, rgba(0,157,255, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3-b-3bf0iy54mu 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.loader[b-3bf0iy54mu]:before {
+  width: 50%;
+  height: 50%;
+  background: #009dff;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+.loader[b-3bf0iy54mu]:after {
+  background: #ffffff;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3-b-3bf0iy54mu {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* Chat containers */
+.msg-container[b-3bf0iy54mu] {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  max-width: 70%; 
+  min-width: 30%; 
+  min-height: 60px;
+  overflow-wrap:break-word;
+
+}
+
+/* Darker chat container */
+.darker[b-3bf0iy54mu] {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+/* Clear floats */
+.msg-container[b-3bf0iy54mu]::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.msg-container img[b-3bf0iy54mu] {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.msg-container img.right[b-3bf0iy54mu] {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+/* Style time text */
+.time-right[b-3bf0iy54mu] {
+  float: right;
+  color: #696969;
+}
+
+/* Style time text */
+.time-left[b-3bf0iy54mu] {
+  float: left;
+  color: #696969;
+}
+
+/* added this */
+div.msg-container ul[b-3bf0iy54mu] {
+  margin: 0px 10px;
+  padding: 3px 10px 3px 10px;
+}
+
+.client[b-3bf0iy54mu] {
+	background-color:#ededed;
+	margin: 8px;
+	border:2px solid #a7adae;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+.client:hover[b-3bf0iy54mu]{
+background-color:#cfcfcf;
+transition:background-color 0.2s linear 0s;
+}
+
+html[b-3bf0iy54mu],
+body[b-3bf0iy54mu] {
+  margin: 0;
+  padding: 0;
+}
+
+/* use viewport-relative units to cover page fully */
+body[b-3bf0iy54mu] {
+  height: 100vh;
+  width: 80vw;
+}
+
+/* include border and padding in element width and height */
+*[b-3bf0iy54mu] {
+  box-sizing: border-box;
+}
+
+.client-name[b-3bf0iy54mu] {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+.sketchy[b-3bf0iy54mu] {
+    padding: 4rem 8rem;
+    border: 3px solid #333333;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    background: #ffffff;
+    position: relative;
+    
+    &::before {
+        content: '';
+        border: 2px solid #353535;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+        border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+    }
+}

@@ -1,0 +1,382 @@
+INFO 39 LinkedInLib.LinkedInController -  count:27 11:32 Kevin Toster: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+INFO 39 LinkedInLib.LinkedInController -  count:28 08:30 Wiktor Adamczyk: what?
+INFO 39 LinkedInLib.LinkedInController -  count:29 08:30 Kevin Toster: Initial message
+INFO 39 LinkedInLib.LinkedInController -  count:30 08:31 Wiktor Adamczyk: ?
+INFO 39 LinkedInLib.LinkedInController -  count:31 08:31 Kevin Toster: Initial message
+INFO 39 LinkedInLib.LinkedInController -  count:32 08:37 Kevin Toster: Initial message
+INFO 39 LinkedInLib.LinkedInController -  count:33 08:41 Kevin Toster: Initial message
+INFO 39 LinkedInLib.LinkedInController -  count:34 08:41 Wiktor Adamczyk: ?
+INFO 39 LinkedInLib.LinkedInController -  count:35 10:45 Wiktor Adamczyk: ?
+INFO 39 LinkedInLib.LinkedInController -  count:36 12:29 Wiktor Adamczyk: stop
+INFO 39 LinkedInLib.LinkedInController -  count:37 14:44 Kevin Toster: a
+INFO 39 LinkedInLib.LinkedInController -  count:38 15:19 Wiktor Adamczyk: a
+INFO 39 LinkedInLib.LinkedInController -  count:39 15:20 Kevin Toster: fix my chat
+INFO 39 LinkedInLib.LinkedInController - Message exists in db
+INFO 39 LinkedInLib.LinkedInController - Client status after is: 8
+INFO 39 LinkedInLib.LinkedInController - Account email: kevin@trashmail.fr Synchronising for client id: 33 
+INFO 39 LinkedInLib.LinkedInController - Client status before is: 3
+INFO 39 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/in/koby-tester-8b6343219/
+INFO 39 LinkedInLib.LinkedInController - You are currently not friends with https://www.linkedin.com/in/koby-tester-8b6343219/
+INFO 39 LinkedInLib.LinkedInController - Client status after is: 3
+INFO 39 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/m/logout
+INFO 39 LinkedInLib.LinkedInController - Starting sync for special accounts
+INFO 39 LinkedInLib.LinkedInController - Synchronisation finished
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 9 LinkedInLib.LinkedInController - First render of index page completed
+INFO 13 LinkedInLib.LinkedInController - Chat set as read
+INFO 13 LinkedInLib.LinkedInController - Returning 42 messages
+INFO 14 LinkedInLib.LinkedInController - First render of index page completed
+INFO 18 LinkedInLib.LinkedInController - Chat set as read
+INFO 18 LinkedInLib.LinkedInController - Returning 42 messages
+INFO 8 LinkedInLib.LinkedInController - First render of index page completed
+INFO 13 LinkedInLib.LinkedInController - Starting sync for nonspecial accounts
+INFO 13 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/
+INFO 13 LinkedInLib.LinkedInController - You're currently logged out
+INFO 13 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/
+INFO 13 LinkedInLib.LinkedInController - You're currently logged in
+INFO 13 LinkedInLib.LinkedInController - Logged in using: kevin@trashmail.fr
+INFO 13 LinkedInLib.LinkedInController - Account email: kevin@trashmail.fr Synchronising for client id: 32 
+INFO 13 LinkedInLib.LinkedInController - Client status before is: 8
+INFO 13 LinkedInLib.LinkedInController - Checking for new messages
+INFO 13 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/in/wiktoradamczyk/
+INFO 13 LinkedInLib.LinkedInController -  count:0 08:14 Kevin Toster: Wiktor Adamczyk
+INFO 13 LinkedInLib.LinkedInController -  count:1 14:26 Wiktor Adamczyk: a
+a
+a
+INFO 13 LinkedInLib.LinkedInController -  count:2 14:26 Wiktor Adamczyk: aa
+INFO 13 LinkedInLib.LinkedInController -  count:3 14:26 Wiktor Adamczyk: a
+INFO 13 LinkedInLib.LinkedInController -  count:4 14:26 Wiktor Adamczyk: a
+INFO 13 LinkedInLib.LinkedInController -  count:5 14:26 Wiktor Adamczyk: a
+INFO 13 LinkedInLib.LinkedInController -  count:6 13:28 Kevin Toster: Initial message
+INFO 13 LinkedInLib.LinkedInController -  count:7 13:51 Kevin Toster: Initial message
+INFO 13 LinkedInLib.LinkedInController -  count:8 13:56 Kevin Toster: as
+INFO 13 LinkedInLib.LinkedInController -  count:9 14:05 Wiktor Adamczyk: l
+INFO 13 LinkedInLib.LinkedInController -  count:10 14:05 Wiktor Adamczyk: l
+INFO 13 LinkedInLib.LinkedInController -  count:11 14:07 Kevin Toster: aaa
+INFO 13 LinkedInLib.LinkedInController -  count:12 14:11 Kevin Toster: pop
+INFO 13 LinkedInLib.LinkedInController -  count:13 14:48 Kevin Toster: testing
+INFO 13 LinkedInLib.LinkedInController -  count:14 14:51 Kevin Toster: crash
+INFO 13 LinkedInLib.LinkedInController -  count:15 14:56 Kevin Toster: cccc
+INFO 13 LinkedInLib.LinkedInController -  count:16 14:58 Kevin Toster: test
+INFO 13 LinkedInLib.LinkedInController -  count:17 15:14 Kevin Toster: new message
+INFO 13 LinkedInLib.LinkedInController -  count:18 15:14 Kevin Toster: a
+INFO 13 LinkedInLib.LinkedInController -  count:19 15:24 Kevin Toster: 123
+INFO 13 LinkedInLib.LinkedInController -  count:20 15:24 Kevin Toster: o
+INFO 13 LinkedInLib.LinkedInController -  count:21 11:34 Kevin Toster: testowa wiadomość
+INFO 13 LinkedInLib.LinkedInController -  count:22 10:18 Kevin Toster: Initial message
+INFO 13 LinkedInLib.LinkedInController -  count:23 10:18 Kevin Toster: Initial message
+INFO 13 LinkedInLib.LinkedInController -  count:24 10:18 Kevin Toster: Initial message
+INFO 13 LinkedInLib.LinkedInController -  count:25 10:26 Kevin Toster: scrolldown
+INFO 13 LinkedInLib.LinkedInController -  count:26 11:03 Kevin Toster: long messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong message
+INFO 13 LinkedInLib.LinkedInController -  count:27 11:32 Kevin Toster: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+INFO 13 LinkedInLib.LinkedInController -  count:28 08:30 Wiktor Adamczyk: what?
+INFO 13 LinkedInLib.LinkedInController -  count:29 08:30 Kevin Toster: Initial message
+INFO 13 LinkedInLib.LinkedInController -  count:30 08:31 Wiktor Adamczyk: ?
+INFO 13 LinkedInLib.LinkedInController -  count:31 08:31 Kevin Toster: Initial message
+INFO 13 LinkedInLib.LinkedInController -  count:32 08:37 Kevin Toster: Initial message
+INFO 13 LinkedInLib.LinkedInController -  count:33 08:41 Kevin Toster: Initial message
+INFO 13 LinkedInLib.LinkedInController -  count:34 08:41 Wiktor Adamczyk: ?
+INFO 13 LinkedInLib.LinkedInController -  count:35 10:45 Wiktor Adamczyk: ?
+INFO 13 LinkedInLib.LinkedInController -  count:36 12:29 Wiktor Adamczyk: stop
+INFO 13 LinkedInLib.LinkedInController -  count:37 14:44 Kevin Toster: a
+INFO 13 LinkedInLib.LinkedInController -  count:38 15:19 Wiktor Adamczyk: a
+INFO 13 LinkedInLib.LinkedInController -  count:39 15:20 Kevin Toster: fix my chat
+INFO 13 LinkedInLib.LinkedInController - Message exists in db
+INFO 13 LinkedInLib.LinkedInController - Client status after is: 8
+INFO 13 LinkedInLib.LinkedInController - Account email: kevin@trashmail.fr Synchronising for client id: 33 
+INFO 13 LinkedInLib.LinkedInController - Client status before is: 3
+INFO 13 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/in/koby-tester-8b6343219/
+INFO 13 LinkedInLib.LinkedInController - You are currently not friends with https://www.linkedin.com/in/koby-tester-8b6343219/
+INFO 13 LinkedInLib.LinkedInController - Client status after is: 3
+INFO 13 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/m/logout
+INFO 13 LinkedInLib.LinkedInController - Starting sync for special accounts
+INFO 13 LinkedInLib.LinkedInController - Synchronisation finished
+INFO 21 LinkedInLib.LinkedInController - Chat set as read
+INFO 21 LinkedInLib.LinkedInController - Returning 42 messages
+INFO 8 LinkedInLib.LinkedInController - No messages found
+INFO 21 LinkedInLib.LinkedInController - Chat set as read
+INFO 21 LinkedInLib.LinkedInController - Returning 42 messages
+INFO 25 LinkedInLib.LinkedInController - First render of index page completed
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 4 LinkedInLib.LinkedInController - First render of index page completed
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 4 LinkedInLib.LinkedInController - First render of index page completed
+INFO 4 LinkedInLib.LinkedInController - Chat set as read
+INFO 4 LinkedInLib.LinkedInController - Returning 42 messages
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 13 LinkedInLib.LinkedInController - First render of index page completed
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 9 LinkedInLib.LinkedInController - First render of index page completed
+INFO 14 LinkedInLib.LinkedInController - Chat set as read
+INFO 14 LinkedInLib.LinkedInController - Returning 42 messages
+INFO 10 LinkedInLib.LinkedInController - No messages found
+INFO 10 LinkedInLib.LinkedInController - Chat set as read
+INFO 10 LinkedInLib.LinkedInController - Returning 42 messages
+INFO 13 LinkedInLib.LinkedInController - Chat set as read
+INFO 13 LinkedInLib.LinkedInController - Returning 42 messages
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 9 LinkedInLib.LinkedInController - First render of index page completed
+INFO 9 LinkedInLib.LinkedInController - Chat set as read
+INFO 9 LinkedInLib.LinkedInController - Returning 42 messages
+INFO 10 LinkedInLib.LinkedInController - First render of index page completed
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 18 LinkedInLib.LinkedInController - First render of index page completed
+INFO 8 LinkedInLib.LinkedInController - Chat set as read
+INFO 8 LinkedInLib.LinkedInController - Returning 42 messages
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 14 LinkedInLib.LinkedInController - First render of index page completed
+INFO 4 LinkedInLib.LinkedInController - Chat set as read
+INFO 4 LinkedInLib.LinkedInController - Returning 42 messages
+WARN 10 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer - Unhandled exception rendering component: An exception occurred executing JS interop: The JSON value could not be converted to System.Boolean. Path: $ | LineNumber: 0 | BytePositionInLine: 4.. See InnerException for more details.
+Microsoft.JSInterop.JSException: An exception occurred executing JS interop: The JSON value could not be converted to System.Boolean. Path: $ | LineNumber: 0 | BytePositionInLine: 4.. See InnerException for more details.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to System.Boolean. Path: $ | LineNumber: 0 | BytePositionInLine: 4.
+ ---> System.InvalidOperationException: Cannot get the value of a token type 'Null' as a boolean.
+   at System.Text.Json.Utf8JsonReader.GetBoolean()
+   at System.Text.Json.Serialization.Converters.BooleanConverter.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCoreAsObject(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonConverter jsonConverter, Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadValueCore[TValue](JsonSerializerOptions options, Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.Deserialize(Utf8JsonReader& reader, Type returnType, JsonSerializerOptions options)
+   at Microsoft.JSInterop.JSRuntime.EndInvokeJS(Int64 taskId, Boolean succeeded, Utf8JsonReader& jsonReader)
+   --- End of inner exception stack trace ---
+   at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+   at LinkedInSalesToolGUI.Pages.Messages.SendMessage(String message) in C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI\Pages\Messages.razor:line 300
+   at Microsoft.AspNetCore.Components.ComponentBase.CallStateHasChangedOnAsyncCompletion(Task task)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle)
+ERROR 10 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost - Unhandled exception in circuit 'oDtcnsUGhHWAFvYDYkCVCDtIv97TGcyFGDwtv5N5MkA'.
+Microsoft.JSInterop.JSException: An exception occurred executing JS interop: The JSON value could not be converted to System.Boolean. Path: $ | LineNumber: 0 | BytePositionInLine: 4.. See InnerException for more details.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to System.Boolean. Path: $ | LineNumber: 0 | BytePositionInLine: 4.
+ ---> System.InvalidOperationException: Cannot get the value of a token type 'Null' as a boolean.
+   at System.Text.Json.Utf8JsonReader.GetBoolean()
+   at System.Text.Json.Serialization.Converters.BooleanConverter.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCoreAsObject(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonConverter jsonConverter, Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadValueCore[TValue](JsonSerializerOptions options, Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.Deserialize(Utf8JsonReader& reader, Type returnType, JsonSerializerOptions options)
+   at Microsoft.JSInterop.JSRuntime.EndInvokeJS(Int64 taskId, Boolean succeeded, Utf8JsonReader& jsonReader)
+   --- End of inner exception stack trace ---
+   at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+   at LinkedInSalesToolGUI.Pages.Messages.SendMessage(String message) in C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI\Pages\Messages.razor:line 300
+   at Microsoft.AspNetCore.Components.ComponentBase.CallStateHasChangedOnAsyncCompletion(Task task)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle)
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 4 LinkedInLib.LinkedInController - First render of index page completed
+INFO 4 LinkedInLib.LinkedInController - Chat set as read
+INFO 4 LinkedInLib.LinkedInController - Returning 42 messages
+INFO 14 LinkedInLib.LinkedInController - Fixing discrepancy between account: 7 Kevin Toster and client: 32 Wiktor Adamczyk
+INFO 14 LinkedInLib.LinkedInController - Chat set as read
+INFO 14 LinkedInLib.LinkedInController - Returning 42 messages
+INFO 14 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/in/wiktoradamczyk/
+ERROR 14 LinkedInLib.LinkedInController - Could not open chat with user https://www.linkedin.com/in/wiktoradamczyk/
+ERROR 14 LinkedInLib.LinkedInController - Could not open chat
+WARN 14 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer - Unhandled exception rendering component: Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at LinkedInLib.MessagesManager.FixIncorrectData(ClientData clientData, AccountCreditentials accountCreditentials) in C:\Programming\Projects\LinkedInLib\LinkedInLib\MessagesManager.cs:line 264
+   at LinkedInSalesToolGUI.Data.DatabaseService.FixIncorrectData(ClientData clientData, AccountCreditentials accountCreditentials) in C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI\Data\DatabaseService.cs:line 333
+   at LinkedInSalesToolGUI.Pages.Messages.FixIncorrectData() in C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI\Pages\Messages.razor:line 341
+   at Microsoft.AspNetCore.Components.EventCallbackWorkItem.InvokeAsync[T](MulticastDelegate delegate, T arg)
+   at Microsoft.AspNetCore.Components.ComponentBase.Microsoft.AspNetCore.Components.IHandleEvent.HandleEventAsync(EventCallbackWorkItem callback, Object arg)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.DispatchEventAsync(UInt64 eventHandlerId, EventFieldInfo fieldInfo, EventArgs eventArgs)
+ERROR 14 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost - Unhandled exception in circuit 'kBhNVwULXrtlodHw95zqOobgtIRKZargx0lawepIkjI'.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at LinkedInLib.MessagesManager.FixIncorrectData(ClientData clientData, AccountCreditentials accountCreditentials) in C:\Programming\Projects\LinkedInLib\LinkedInLib\MessagesManager.cs:line 264
+   at LinkedInSalesToolGUI.Data.DatabaseService.FixIncorrectData(ClientData clientData, AccountCreditentials accountCreditentials) in C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI\Data\DatabaseService.cs:line 333
+   at LinkedInSalesToolGUI.Pages.Messages.FixIncorrectData() in C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI\Pages\Messages.razor:line 341
+   at Microsoft.AspNetCore.Components.EventCallbackWorkItem.InvokeAsync[T](MulticastDelegate delegate, T arg)
+   at Microsoft.AspNetCore.Components.ComponentBase.Microsoft.AspNetCore.Components.IHandleEvent.HandleEventAsync(EventCallbackWorkItem callback, Object arg)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.DispatchEventAsync(UInt64 eventHandlerId, EventFieldInfo fieldInfo, EventArgs eventArgs)
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 13 LinkedInLib.LinkedInController - First render of index page completed
+INFO 13 LinkedInLib.LinkedInController - Chat set as read
+INFO 13 LinkedInLib.LinkedInController - Returning 42 messages
+INFO 10 LinkedInLib.LinkedInController - Fixing discrepancy between account: 7 Kevin Toster and client: 32 Wiktor Adamczyk
+INFO 10 LinkedInLib.LinkedInController - Chat set as read
+INFO 10 LinkedInLib.LinkedInController - Returning 42 messages
+INFO 10 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/in/wiktoradamczyk/
+ERROR 10 LinkedInLib.LinkedInController - Could not open chat with user https://www.linkedin.com/in/wiktoradamczyk/
+ERROR 10 LinkedInLib.LinkedInController - Could not open chat
+WARN 10 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer - Unhandled exception rendering component: Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at LinkedInLib.MessagesManager.FixIncorrectData(ClientData clientData, AccountCreditentials accountCreditentials) in C:\Programming\Projects\LinkedInLib\LinkedInLib\MessagesManager.cs:line 264
+   at LinkedInSalesToolGUI.Data.DatabaseService.FixIncorrectData(ClientData clientData, AccountCreditentials accountCreditentials) in C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI\Data\DatabaseService.cs:line 333
+   at LinkedInSalesToolGUI.Pages.Messages.FixIncorrectData() in C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI\Pages\Messages.razor:line 341
+   at Microsoft.AspNetCore.Components.EventCallbackWorkItem.InvokeAsync[T](MulticastDelegate delegate, T arg)
+   at Microsoft.AspNetCore.Components.ComponentBase.Microsoft.AspNetCore.Components.IHandleEvent.HandleEventAsync(EventCallbackWorkItem callback, Object arg)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.DispatchEventAsync(UInt64 eventHandlerId, EventFieldInfo fieldInfo, EventArgs eventArgs)
+ERROR 10 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost - Unhandled exception in circuit 'm3LnQjSWUvqp4K7eiUDg2C9fMma7uEq1LG2XUjL8KXU'.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at LinkedInLib.MessagesManager.FixIncorrectData(ClientData clientData, AccountCreditentials accountCreditentials) in C:\Programming\Projects\LinkedInLib\LinkedInLib\MessagesManager.cs:line 264
+   at LinkedInSalesToolGUI.Data.DatabaseService.FixIncorrectData(ClientData clientData, AccountCreditentials accountCreditentials) in C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI\Data\DatabaseService.cs:line 333
+   at LinkedInSalesToolGUI.Pages.Messages.FixIncorrectData() in C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI\Pages\Messages.razor:line 341
+   at Microsoft.AspNetCore.Components.EventCallbackWorkItem.InvokeAsync[T](MulticastDelegate delegate, T arg)
+   at Microsoft.AspNetCore.Components.ComponentBase.Microsoft.AspNetCore.Components.IHandleEvent.HandleEventAsync(EventCallbackWorkItem callback, Object arg)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.DispatchEventAsync(UInt64 eventHandlerId, EventFieldInfo fieldInfo, EventArgs eventArgs)
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 8 LinkedInLib.LinkedInController - First render of index page completed
+INFO 4 LinkedInLib.LinkedInController - Chat set as read
+INFO 4 LinkedInLib.LinkedInController - Returning 42 messages
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programming\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 4 LinkedInLib.LinkedInController - First render of index page completed
+INFO 10 LinkedInLib.LinkedInController - Chat set as read
+INFO 10 LinkedInLib.LinkedInController - Returning 42 messages
+INFO 9 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/
+INFO 9 LinkedInLib.LinkedInController - You're currently logged out
+INFO 9 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/
+INFO 9 LinkedInLib.LinkedInController - You're currently logged in
+INFO 9 LinkedInLib.LinkedInController - Logged in using: kevin@trashmail.fr
+INFO 9 LinkedInLib.LinkedInController - Fixing discrepancy between account: 7 Kevin Toster and client: 32 Wiktor Adamczyk
+INFO 9 LinkedInLib.LinkedInController - Chat set as read
+INFO 9 LinkedInLib.LinkedInController - Returning 42 messages
+INFO 9 LinkedInLib.LinkedInController - Visited url: https://www.linkedin.com/in/wiktoradamczyk/
+INFO 9 LinkedInLib.LinkedInController -  count:0 08:14 Kevin Toster: Wiktor Adamczyk
+INFO 9 LinkedInLib.LinkedInController -  count:1 14:26 Wiktor Adamczyk: a
+a
+a
+INFO 9 LinkedInLib.LinkedInController -  count:2 14:26 Wiktor Adamczyk: aa
+INFO 9 LinkedInLib.LinkedInController -  count:3 14:26 Wiktor Adamczyk: a
+INFO 9 LinkedInLib.LinkedInController -  count:4 14:26 Wiktor Adamczyk: a
+INFO 9 LinkedInLib.LinkedInController -  count:5 14:26 Wiktor Adamczyk: a
+INFO 9 LinkedInLib.LinkedInController -  count:6 13:28 Kevin Toster: Initial message
+INFO 9 LinkedInLib.LinkedInController -  count:7 13:51 Kevin Toster: Initial message
+INFO 9 LinkedInLib.LinkedInController -  count:8 13:56 Kevin Toster: as
+INFO 9 LinkedInLib.LinkedInController -  count:9 14:05 Wiktor Adamczyk: l
+INFO 9 LinkedInLib.LinkedInController -  count:10 14:05 Wiktor Adamczyk: l
+INFO 9 LinkedInLib.LinkedInController -  count:11 14:07 Kevin Toster: aaa
+INFO 9 LinkedInLib.LinkedInController -  count:12 14:11 Kevin Toster: pop
+INFO 9 LinkedInLib.LinkedInController -  count:13 14:48 Kevin Toster: testing
+INFO 9 LinkedInLib.LinkedInController -  count:14 14:51 Kevin Toster: crash
+INFO 9 LinkedInLib.LinkedInController -  count:15 14:56 Kevin Toster: cccc
+INFO 9 LinkedInLib.LinkedInController -  count:16 14:58 Kevin Toster: test
+INFO 9 LinkedInLib.LinkedInController -  count:17 15:14 Kevin Toster: new message
+INFO 9 LinkedInLib.LinkedInController -  count:18 15:14 Kevin Toster: a
+INFO 9 LinkedInLib.LinkedInController -  count:19 15:24 Kevin Toster: 123
+INFO 9 LinkedInLib.LinkedInController -  count:20 15:24 Kevin Toster: o
+INFO 9 LinkedInLib.LinkedInController -  count:21 11:34 Kevin Toster: testowa wiadomość
+INFO 9 LinkedInLib.LinkedInController -  count:22 10:18 Kevin Toster: Initial message
+INFO 9 LinkedInLib.LinkedInController -  count:23 10:18 Kevin Toster: Initial message
+INFO 9 LinkedInLib.LinkedInController -  count:24 10:18 Kevin Toster: Initial message
+INFO 9 LinkedInLib.LinkedInController -  count:25 10:26 Kevin Toster: scrolldown
+INFO 9 LinkedInLib.LinkedInController -  count:26 11:03 Kevin Toster: long messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong messagelong message
+INFO 9 LinkedInLib.LinkedInController -  count:27 11:32 Kevin Toster: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+INFO 9 LinkedInLib.LinkedInController -  count:28 08:30 Wiktor Adamczyk: what?
+INFO 9 LinkedInLib.LinkedInController -  count:29 08:30 Kevin Toster: Initial message
+INFO 9 LinkedInLib.LinkedInController -  count:30 08:31 Wiktor Adamczyk: ?
+INFO 9 LinkedInLib.LinkedInController -  count:31 08:31 Kevin Toster: Initial message
+INFO 9 LinkedInLib.LinkedInController -  count:32 08:37 Kevin Toster: Initial message
+INFO 9 LinkedInLib.LinkedInController -  count:33 08:41 Kevin Toster: Initial message
+INFO 9 LinkedInLib.LinkedInController -  count:34 08:41 Wiktor Adamczyk: ?
+INFO 9 LinkedInLib.LinkedInController -  count:35 10:45 Wiktor Adamczyk: ?
+INFO 9 LinkedInLib.LinkedInController -  count:36 12:29 Wiktor Adamczyk: stop
+INFO 9 LinkedInLib.LinkedInController -  count:37 14:44 Kevin Toster: a
+INFO 9 LinkedInLib.LinkedInController -  count:38 15:19 Wiktor Adamczyk: a
+INFO 9 LinkedInLib.LinkedInController -  count:39 15:20 Kevin Toster: fix my chat
+INFO 9 LinkedInLib.LinkedInController - Removed messages between Account Id: 7 and Client Id: 32 from database
+INFO 9 LinkedInLib.LinkedInController - Message doesn't exist in db
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - New message inserted
+INFO 9 LinkedInLib.LinkedInController - Chat set as read
+INFO 9 LinkedInLib.LinkedInController - Returning 40 messages
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...

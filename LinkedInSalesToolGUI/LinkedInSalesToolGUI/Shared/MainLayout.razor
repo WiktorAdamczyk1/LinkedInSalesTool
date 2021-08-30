@@ -1,0 +1,53 @@
+﻿@using LinkedInSalesToolGUI.Data
+@inherits LayoutComponentBase
+@inject NavigationManager _navManager
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <div class="main">
+        <div class="top-row px-4">
+            @if (Startup.lastSyncDateTime != DateTime.MinValue)
+            {
+
+                <text>
+                    Last sync: @Startup.lastSyncDateTime.ToString("dd.MM.yyyy   H:mm:ss")
+                </text>
+
+            }
+            else
+            {
+
+                <text>
+                    Last sync: n/a
+                </text>
+
+            }
+            <div style=" justify-content: flex-end; float: right; margin-left:auto; padding: 3px">
+                @if (Startup.databaseManagerSet)
+                {
+                    <p style="color:limegreen"><em>You have a valid database connection</em></p>
+                }
+                else if (_navManager.Uri.Contains("accounts") || _navManager.Uri.Contains("settings") || _navManager.Uri.Contains("clients") || _navManager.Uri.Contains("messages"))
+                {
+                    <em>
+                        <a href="/Settings" style="color:red">
+                            Couldn't establish a connection to the database!
+                            Resolve this issue on the settings page.
+                        </a>
+                    </em>
+                }
+                else
+                {
+
+                }
+            </div>
+        </div>
+
+            <div class="content px-4">
+                @Body
+            </div>
+        </div>
+</div>

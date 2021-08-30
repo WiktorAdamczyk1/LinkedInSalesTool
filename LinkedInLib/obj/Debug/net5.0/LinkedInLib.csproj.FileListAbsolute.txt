@@ -1,0 +1,12 @@
+C:\Programming\Projects\LinkedInLib\LinkedInLib\bin\Debug\net5.0\LinkedInLib.deps.json
+C:\Programming\Projects\LinkedInLib\LinkedInLib\bin\Debug\net5.0\LinkedInLib.dll
+C:\Programming\Projects\LinkedInLib\LinkedInLib\bin\Debug\net5.0\ref\LinkedInLib.dll
+C:\Programming\Projects\LinkedInLib\LinkedInLib\bin\Debug\net5.0\LinkedInLib.pdb
+C:\Programming\Projects\LinkedInLib\LinkedInLib\obj\Debug\net5.0\LinkedInLib.csproj.AssemblyReference.cache
+C:\Programming\Projects\LinkedInLib\LinkedInLib\obj\Debug\net5.0\LinkedInLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming\Projects\LinkedInLib\LinkedInLib\obj\Debug\net5.0\LinkedInLib.AssemblyInfoInputs.cache
+C:\Programming\Projects\LinkedInLib\LinkedInLib\obj\Debug\net5.0\LinkedInLib.AssemblyInfo.cs
+C:\Programming\Projects\LinkedInLib\LinkedInLib\obj\Debug\net5.0\LinkedInLib.csproj.CoreCompileInputs.cache
+C:\Programming\Projects\LinkedInLib\LinkedInLib\obj\Debug\net5.0\LinkedInLib.dll
+C:\Programming\Projects\LinkedInLib\LinkedInLib\obj\Debug\net5.0\ref\LinkedInLib.dll
+C:\Programming\Projects\LinkedInLib\LinkedInLib\obj\Debug\net5.0\LinkedInLib.pdb
