@@ -56,3 +56,17 @@ INFO 19 LinkedInLib.LinkedInController - Removed account_client with Client Id: 
 INFO 19 LinkedInLib.LinkedInController - Removed messages between Account Id: 1 and Client Id: 3 from database
 INFO 19 LinkedInLib.LinkedInController - Removed client with id:3
 INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programowanie\Praca\Praktyki Hart Sp. z o.o\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 11 LinkedInLib.LinkedInController - First render of index page completed
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+INFO 1 Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+INFO 1 Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+INFO 1 Microsoft.Hosting.Lifetime - Hosting environment: Development
+INFO 1 Microsoft.Hosting.Lifetime - Content root path: C:\Programowanie\Praca\Praktyki Hart Sp. z o.o\Projects\LinkedInLib\LinkedInSalesToolGUI\LinkedInSalesToolGUI
+INFO 11 LinkedInLib.LinkedInController - First render of index page completed
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
