@@ -55,3 +55,4 @@ INFO 16 LinkedInLib.LinkedInController - Account_client inserted
 INFO 19 LinkedInLib.LinkedInController - Removed account_client with Client Id: 3 from database
 INFO 19 LinkedInLib.LinkedInController - Removed messages between Account Id: 1 and Client Id: 3 from database
 INFO 19 LinkedInLib.LinkedInController - Removed client with id:3
+INFO 2 Microsoft.Hosting.Lifetime - Application is shutting down...
