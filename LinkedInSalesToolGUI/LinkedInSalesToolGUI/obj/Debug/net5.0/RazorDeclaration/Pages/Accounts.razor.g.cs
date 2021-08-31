@@ -124,12 +124,11 @@ using LinkedInLib;
 
     private async Task HandleValidSubmit()
     {
-
         if (!(await dbService.CheckIfAccountExistsInDb(accountModel.Email)))
         {
             checkingName = true;
             string name = await dbService.GetAccountName(accountModel.Email, accountModel.Password);
-            if (name != "Failed") if (await dbService.InsertAccount(accountModel.Email, accountModel.Password, name, accountModel.Special))
+            if (name != "Failed" && await dbService.InsertAccount(accountModel.Email, accountModel.Password, name, accountModel.Special))
                 {
                     accountsCreditentials = await dbService.GetAccountsAsync();
                     testSucceded = true;

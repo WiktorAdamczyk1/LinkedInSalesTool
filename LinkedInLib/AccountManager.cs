@@ -58,7 +58,7 @@ namespace LinkedInLib
             }
             else
             {
-                logger.Error("Couldn't log in using: {account.email}");
+                logger.Error($"Couldn't log in using: {account.Email}");
                 return false;
             }
 
