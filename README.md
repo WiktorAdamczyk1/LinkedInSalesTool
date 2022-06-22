@@ -45,4 +45,5 @@ This is a blazor server application that is used as a simple GUI for the `Linked
 
 * [Selenium webdriver](https://www.selenium.dev/documentation/webdriver/)
 * [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)
+* [PostgreSQL](https://www.postgresql.org/)
 
